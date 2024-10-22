@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body
+    class="bg-violet-50 text-center justify-start flex flex-col items-start items-center m-0 p-0 h-screen"
+  >
+    <!-- below is the div for site title box stone papers scissors  -->
+    <div
+      class="bg-cyan-500/50 h-[3rem] leading-[1rem] text-3xl rounded-xl max-w-[30%] m-[1rem] p-[1rem]"
+    >
+      <h1 class="" style="font-family: 'Patrick Hand', cursive">
+        Stone Papers Scissors
+      </h1>
+    </div>
+
+    <!-- below is the div for icons   -->
+    <div class="flex gap-x-10 h-[10rem] mt-[4rem]" id="choices">
+      <div id="stone" class="choice max-h-[8rem] max-w-[8rem]">
+        <img
+          src="/images/rock.png"
+          alt="image of stone"
+          class="hover:border-4 border-black hover:opacity-[70%] rounded-full object-cover h-full w-full"
+        />
+      </div>
+      <div id="paper" class="choice max-h-[8rem] max-w-[8rem]">
+        <img
+          src="/images/paper.png"
+          alt="image of paper"
+          class="hover:border-4 border-black hover:opacity-[70%] rounded-full object-cover h-full w-full"
+        />
+      </div>
+      <div id="scissor" class="choice max-h-[8rem] max-w-[8rem]">
+        <img
+          src="/images/scissors.png"
+          alt="image of scissors"
+          class="hover:border-4 border-black hover:opacity-[70%] rounded-full object-cover h-full w-full"
+        />
+      </div>
+    </div>
+
+    <div
+      id="msg-div"
+      class="mb-[1rem] bg-orange-400 hidden opacity-60 transition-opacity duration-1000 rounded-full p-[0.5rem] absolute bottom-0"
+    >
+      <h1
+        class="text-2xl"
+        style="font-family: 'Patrick Hand', cursive"
+        id="msg"
+      ></h1>
+    </div>
+
+    <!-- below is the div for score box  -->
+    <div class="flex gap-[5rem]" id="score-div">
+      <div class="bg-slate-600/60 rounded-xl p-[1rem] text-white">
+        <h2 class="text-2xl font-bold" id="user-score-div">User Score</h2>
+        <h2 id="user-score" class="text-2xl font-bold text-green-200">0</h2>
+      </div>
+      <div class="bg-slate-600/60 rounded-xl p-[1rem] text-white">
+        <h2 class="text-2xl font-bold" id="comp-score-div">comp Score</h2>
+        <h2 id="comp-score" class="text-2xl font-bold text-orange-200">0</h2>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
